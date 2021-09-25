@@ -23,7 +23,6 @@ func main() {
 	}
 }
 
-
 func handle(conn net.Conn) {
 	err := conn.SetDeadline(time.Now().Add(10 * time.Second))
 	if err != nil {
